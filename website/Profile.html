@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>K3L Premium Dashboard</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="bootstrap-icons.css">
+  </head>
+  <body>
+    <div class="dashboard">
+      <aside class="sidebar" id="siteSidebar">
+        <div class="brand">
+          <div class="brand-mark">K</div>
+          <div>
+            <small>Safety System</small>
+            <strong>K3L</strong>
+          </div>
+          <button class="menu-toggle" type="button" aria-controls="siteSidebar" aria-expanded="false">
+        <span aria-hidden="true" class="bi bi-list"></span> 
+        </div>
+
+        <nav class="nav" aria-label="Navigasi utama">
+          <span class="nav-heading">Navigasi</span>
+          <a class="nav-item" href="index.html"><span class="nav-icon" aria-hidden="true">◈</span> Dashboard</a>
+          <a class="nav-item" href="Jurnal.html"><span class="nav-icon" aria-hidden="true">▣</span> Jurnal</a>
+          <a class="nav-item" href="Grafik.html"><span class="nav-icon" aria-hidden="true">◎</span> Grafik</a>
+          <a class="nav-item active" href="Profile.html" aria-current="page"><span class="nav-icon" aria-hidden="true">◌</span> Profil</a>
+        </nav>
+
+        
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div class="title-wrap">
+            <h1>KESEHATAN KESELAMATAN KERJA DAN LINGKUNGAN</h1>
+            <p>Performance overview and site risk monitoring</p>
+          </div>
+
+          <div class="top-actions">
+            <div class="pill" id="todayDate">--</div>
+          </div>
+        </header>
+
+        <div class="info-panel">
+          <div>
+            <strong id="detailTitle">Profil Pengguna</strong>
+            <span id="detailText">Kelola informasi profil dan pengaturan akun Anda.</span>
+          </div>
+          <span class="chip" id="detailBadge">Live</span>
+        </div>
+
+        <section class="stat-grid">
+          <div class="card metric-card">
+            <div class="metric-top">
+              <span>Safety Score</span>
+              <div class="metric-icon" style="background: linear-gradient(135deg, #8af0d0, var(--green));">S</div>
+            </div>
+            <strong>88%</strong>
+            <div class="trend">▲ 4.2% vs last week</div>
+          </div>
+
+          <div class="card metric-card">
+            <div class="metric-top">
+              <span>Incidents</span>
+              <div class="metric-icon" style="background: linear-gradient(135deg, #abd8ff, var(--blue));">I</div>
+            </div>
+            <strong>12</strong>
+            <div class="trend warn">▼ 3 less than target</div>
+          </div>
+
+          <div class="card metric-card">
+            <div class="metric-top">
+              <span>Inspections</span>
+              <div class="metric-icon" style="background: linear-gradient(135deg, #ffe4a8, var(--amber));">P</div>
+            </div>
+            <strong>48</strong>
+            <div class="trend">▲ 9 scheduled today</div>
+          </div>
+
+          <div class="card metric-card">
+            <div class="metric-top">
+              <span>Risk Level</span>
+              <div class="metric-icon" style="background: linear-gradient(135deg, #ffbcc5, var(--red));">R</div>
+            </div>
+            <strong>Low</strong>
+            <div class="trend warn">Stable condition</div>
+          </div>
+        </section>
+
+        <section class="content-grid">
+          <div class="panel">
+            <div class="panel-header">
+              <h3>Safety Overview</h3>
+              <span class="pill">Monthly</span>
+            </div>
+
+            <div class="score-panel">
+              <div class="ring" aria-label="Safety score 88 percent">
+                <div class="ring-value">
+                  <strong>88</strong>
+                  <span>%</span>
+                </div>
+              </div>
+
+              <div class="legend">
+                <div class="legend-row">
+                  <div class="legend-label"><span class="dot" style="background: var(--green);"></span> Compliant</div>
+                  <strong>74%</strong>
+                </div>
+                <div class="legend-row">
+                  <div class="legend-label"><span class="dot" style="background: var(--amber);"></span> Monitor</div>
+                  <strong>18%</strong>
+                </div>
+                <div class="legend-row">
+                  <div class="legend-label"><span class="dot" style="background: var(--red);"></span> Critical</div>
+                  <strong>8%</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-header">
+              <h3>Risk Matrix</h3>
+              <span class="pill">Active</span>
+            </div>
+
+            <div class="risk-list">
+              <div class="risk-item">
+                <div>
+                  <strong>Electrical</strong>
+                  <small>Warehouse A</small>
+                </div>
+                <span class="risk-tag tag-red">High</span>
+              </div>
+
+              <div class="risk-item">
+                <div>
+                  <strong>Working at Height</strong>
+                  <small>Maintenance</small>
+                </div>
+                <span class="risk-tag tag-amber">Medium</span>
+              </div>
+
+              <div class="risk-item">
+                <div>
+                  <strong>Forklift Safety</strong>
+                  <small>Loading Bay</small>
+                </div>
+                <span class="risk-tag tag-green">Low</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-header">
+            <h3>Weekly Safety Trend</h3>
+            <span class="pill">Last 7 days</span>
+          </div>
+
+          <div class="chart-wrap">
+            <div class="bars" aria-label="weekly safety trend chart">
+              <div class="bar-group"><div class="bar" style="height: 54%;"></div><span>Mon</span></div>
+              <div class="bar-group"><div class="bar alt" style="height: 70%;"></div><span>Tue</span></div>
+              <div class="bar-group"><div class="bar" style="height: 63%;"></div><span>Wed</span></div>
+              <div class="bar-group"><div class="bar alt" style="height: 84%;"></div><span>Thu</span></div>
+              <div class="bar-group"><div class="bar" style="height: 76%;"></div><span>Fri</span></div>
+              <div class="bar-group"><div class="bar alt" style="height: 92%;"></div><span>Sat</span></div>
+              <div class="bar-group"><div class="bar" style="height: 88%;"></div><span>Sun</span></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bottom-grid">
+          <div class="panel">
+            <div class="panel-header">
+              <h3>Compliance Progress</h3>
+              <span class="pill">Q4</span>
+            </div>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Program</th>
+                  <th>Owner</th>
+                  <th>Progress</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Hazard Identification</td>
+                  <td>R. Adit</td>
+                  <td><div class="progress"><span style="width: 88%;"></span></div></td>
+                  <td><span class="risk-tag tag-green">On Target</span></td>
+                </tr>
+                <tr>
+                  <td>Emergency Drill</td>
+                  <td>S. Wulan</td>
+                  <td><div class="progress"><span style="width: 72%;"></span></div></td>
+                  <td><span class="risk-tag tag-amber">In Review</span></td>
+                </tr>
+                <tr>
+                  <td>PPE Compliance</td>
+                  <td>D. Prasetyo</td>
+                  <td><div class="progress"><span style="width: 94%;"></span></div></td>
+                  <td><span class="risk-tag tag-green">Excellent</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="panel">
+            <div class="panel-header">
+              <h3>Latest Alerts</h3>
+              <span class="pill">3 items</span>
+            </div>
+
+            <div class="alert-list">
+              <div class="alert-item">
+                <div class="alert-icon red">!</div>
+                <div class="alert-text">
+                  <strong>Gas detector calibration overdue</strong>
+                  <small>Priority: High</small>
+                </div>
+              </div>
+
+              <div class="alert-item">
+                <div class="alert-icon amber">i</div>
+                <div class="alert-text">
+                  <strong>Scaffolding inspection pending</strong>
+                  <small>Due by 17:00</small>
+                </div>
+              </div>
+
+              <div class="alert-item">
+                <div class="alert-icon green">✓</div>
+                <div class="alert-text">
+                  <strong>First aid room checklist approved</strong>
+                  <small>Completed today</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      const menuToggle = document.querySelector('.menu-toggle');
+      const sidebar = document.getElementById('siteSidebar');
+
+      menuToggle.addEventListener('click', () => {
+        const isOpen = sidebar.classList.toggle('is-open');
+        menuToggle.setAttribute('aria-expanded', String(isOpen));
+        menuToggle.innerHTML = isOpen
+          ? '<span aria-hidden="true">×</span> '
+          : '<span aria-hidden="true">☰</span> ';
+      });
+
+      window.matchMedia('(min-width: 1181px)').addEventListener('change', (event) => {
+        if (event.matches) {
+          sidebar.classList.remove('is-open');
+          menuToggle.setAttribute('aria-expanded', 'false');
+          menuToggle.innerHTML = '<span aria-hidden="true">☰</span> Menu Navigasi';
+        }
+      });
+
+      const dateEl = document.getElementById('todayDate');
+      const now = new Date();
+      dateEl.textContent = now.toLocaleDateString('id-ID', {
+        weekday: 'short',
+        day: '2-digit',
+        month: 'short',
+        year: 'numeric'
+      });
+
+      const setDetail = (title, text, badge = 'Live') => {
+        document.getElementById('detailTitle').textContent = title;
+        document.getElementById('detailText').textContent = text;
+        document.getElementById('detailBadge').textContent = badge;
+      };
+
+      document.querySelectorAll('.nav-item').forEach((item) => {
+        item.addEventListener('click', () => {
+          document.querySelectorAll('.nav-item').forEach((nav) => nav.classList.remove('active'));
+          item.classList.add('active');
+
+          const label = item.textContent.trim();
+          setDetail(label, `Memantau area ${label.toLowerCase()} dan perkembangan performa K3L saat ini.`, 'Active');
+        });
+      });
+
+      document.querySelectorAll('.metric-card').forEach((card, index) => {
+        card.addEventListener('click', () => {
+          document.querySelectorAll('.metric-card').forEach((c) => c.classList.remove('active'));
+          card.classList.add('active');
+
+          const labels = {
+            0: ['Safety Score', 'Pencapaian score keselamatan meningkat dan konsisten pada level aman.'],
+            1: ['Incident Trend', 'Jumlah insiden turun dibanding target mingguan dan area kerja lebih terkendali.'],
+            2: ['Inspection Coverage', 'Pelaksanaan inspeksi tinggi dengan jadwal hari ini terselesaikan.'],
+            3: ['Risk Level', 'Tingkat risiko tetap terkendali dengan status aman untuk area operasi.']
+          };
+
+          const [title, text] = labels[index] || ['Dashboard Overview', 'Klik menu atau kartu untuk melihat detail area K3L.'];
+          setDetail(title, text, 'Updated');
+        });
+      });
+
+      document.querySelectorAll('.risk-item, .alert-item, .task-item').forEach((item) => {
+        item.addEventListener('click', () => {
+          document.querySelectorAll('.risk-item, .alert-item, .task-item').forEach((el) => el.classList.remove('active'));
+          item.classList.add('active');
+          const title = item.querySelector('strong')?.textContent || 'Area Dipilih';
+          const desc = item.querySelector('small')?.textContent || 'Detail item dipilih dan perlu tindak lanjut segera.';
+          setDetail(title, desc, 'Selected');
+        });
+      });
+    </script>
+  </body>
+</html>
